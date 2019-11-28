@@ -1,0 +1,376 @@
+/*This is Additional CSS for the Ascension theme. 
+ * These are manual theme overrides, despite being hacky I consider this easier than making another child theme*/
+
+@font-face {
+  font-family: "Breeze Sans";
+  src: url("/fonts/breeze_sans/BreezeSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Breeze Sans-Medium";
+  src: url("/fonts/breeze_sans/BreezeSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Breeze Sans-Bold";
+  src: url("/fonts/breeze_sans/BreezeSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Breeze Sans-MediumCondensed";
+	src: url("/fonts/breeze_sans/BreezeSans-MediumCondensed.ttf");
+}
+
+@font-face {
+	font-family: "Hack";
+	src: url("/fonts/Hack-v3.003-ttf/Hack-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Hack-Bold";
+	src: url("/fonts/Hack-v3.003-ttf/Hack-Bold.ttf");
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	font-weight: normal;
+	src: url("fonts/fontawesome-free-5.10.2-web/webfonts/fa-solid-900.ttf")
+}
+
+@font-face {
+	font-family: "FontAwesome-Brand";
+	font-weight: normal;
+	src: url("fonts/fontawesome-free-5.10.2-web/webfonts/fa-brands-400.ttf")
+}
+
+/*Force the Cotswold Jam logo to be 100px tall.*/
+.custom-logo {
+	max-height: 100px!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Breeze Sans-Medium";
+}
+
+h1.site-title, h1.page-title, h4.widget-title {
+	font-family: "Breeze Sans-Medium";
+	color: #353535;
+}
+
+h3.comment-reply-title {
+	font-family: "Breeze Sans-Medium";
+}
+
+.site-title a, .site-title {
+	color: #252525!important;
+}
+
+label {
+	font-family: "Breeze Sans-Medium";
+}
+
+textarea {
+	font-family: "Breeze Sans";
+}
+
+th {
+	font-family: "Breeze Sans-Bold";
+	font-size: 0.9em;
+}
+
+td {
+	font-family: "Breeze Sans";
+	font-size: 0.9em;
+}
+
+li {
+	font-family: "Breeze Sans"!important;
+}
+
+a.tutorial {
+	font-family: "Breeze Sans";
+	color: #00bfff;
+	font-weight: bold;
+}
+
+div.infobox {
+	width: 100%;
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #f7f7f7;;
+	font-family: "Breeze Sans";
+}
+
+/*Twitter embed*/
+.timeline-Header-title, .customisable-highlight, .sandboxRoot, .timeline-tweettext {
+	font-family: "Breeze Sans"!important;
+}
+
+/*Nav bar*/
+.main-navigation ul li a, .main-navigation ul li a:visited, .main-navigation ul li a:hover, .main-navigation ul li a:focus, .main-navigation ul li a:visited:hover {
+    color: #000;
+		font-size: 16px;
+}
+
+.main-navigation ul li a,.main-navigation, .menu-toggle, ul li a:visited,button,a.button,a.fl-button,input[type="button"],input[type="reset"],input[type="submit"]
+{
+	font-family:"Breeze Sans", sans-serif;
+	color: #252525;
+	font-size: 16px;
+}
+
+input.submit, button, a.button, a.button:visited, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button__link, .site-info-wrapper .social-menu a:hover {
+	background-color: #C51A4A;
+	border-color: #C51A4A;
+	color: #fff;
+}
+
+div.button-center-container {
+	text-align: center;
+}
+
+a.button-center {
+	display: inline-block!important;
+}
+
+a:visited, a.tutorial:visited {
+	color: #6c169e;
+}
+
+/*Underline current page in navbar*/
+li.current_page_item {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #c7053d!important;
+}
+
+/*Hamburger menu*/
+.main-navigation ul li a,.main-navigation ul li a:visited,.main-navigation ul li a:hover,.main-navigation ul li a:focus,.main-navigation ul li a:visited:hover{color:#194f6e;}.main-navigation .sub-menu .menu-item-has-children > a::after{border-right-color:#000;border-left-color:#000;}.menu-toggle div{background-color: #c7053d;}.main-navigation ul li a:hover,.main-navigation ul li a:focus{color:rgba(25, 79, 110, 0.8);}
+
+/*Mobile nav menu*/
+.main-navigation ul li a, .main-navigation ul li a:visited, .main-navigation ul li a:hover, .main-navigation ul li a:focus, .main-navigation ul li a:visited:hover {
+    color: #000;
+		font-size: 16px;
+}
+
+/*Audio Album CSS*/
+h2.audioalbum {
+	font-family: "Breeze Sans-Bold";
+}
+span.mejs-currenttime, span.mejs-duration, span.mejs-time-hovered-negative {
+	font-family: "Breeze Sans";
+}
+
+div.site-description {
+	font-family: "Breeze Sans-MediumCondensed";
+	font-size: 16px;
+}
+
+h1.entry-title {
+	font-family: "Breeze Sans-Bold";
+}
+
+h2.entry-title {
+	font-family: "Breeze Sans-MediumCondensed";
+}
+
+p, a, nav, div.menu a.button, span, button.menu, ul li {
+	font-family: "Breeze Sans";
+}
+
+/*Ensure the controls take up 100% of the page.*/
+.track, .mejs-controls {
+	width: 100%;
+}
+
+/*Force monospaced font for code snippets. Maybe I should define colours here too?*/
+code, .token, .hljs-title, .hljs-keyword, .hljs-literal, .hljs-number, .hljs-string, .hljs-attr, .hljs-meta, .hljs-comment, .hljs-built_in, .hljs-params, .hljs-selector-tag, .hljs-selector-class {
+	font-family: "Hack", monospace;
+}
+
+.mono {
+	font-family: "Hack", monospace;
+	background-color: #f7f7f7;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
+.hero, .hero-inner {
+	background-color: #c7053d;
+}
+
+/*Force Leaflet.js (dynamic map) attribution to use Breeze Sans for consistency.*/
+div.leaflet-control-container {
+	font-family: "Breeze Sans";
+}
+
+div.site-info-text {
+	font-family: "Breeze Sans";
+}
+
+/*Captions for gallery images*/
+
+.wp-caption-text, .gallery-caption {
+	font-family: "Breeze Sans";
+	font-size: 0.8em;
+}
+
+figcaption {
+	font-family: "Breeze Sans"!important;
+	font-size: 0.9em!important;
+}
+
+/*Tutorial download buttons*/
+
+span.font-awesome-icon {
+	font-family: "FontAwesome";
+	color: #fff!important;
+	font-size: 24px;
+}
+
+span.font-awesome-brand-icon {
+	font-family: "FontAwesome-Brand";
+	color: #fff!important;
+	font-size: 24px;
+}
+
+a.button:hover {
+	background-color: #c7053d!important;
+	border-color: #c7053d!important;
+	opacity: 0.5;
+}
+
+a.github-button:hover, a.zip-download:hover, a.pdf-download:hover, a.docx-download:hover, a.pptx-download:hover, a.python-download:hover, a.audio-download:hover, a.image-download:hover {
+	opacity: 0.5;
+}
+
+a.github-button {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #000;
+	border-color: #000;
+	color: #fff!important;
+}
+
+a.zip-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #804000;
+	border-color: #804000;
+	color: #fff!important;
+}
+
+a.pdf-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #ED1C24;
+	border-color: #ED1C24;
+	color: #fff!important;
+}
+
+a.docx-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #0078d7;
+	border-color: #0078d7;
+	color: #fff!important;
+}
+
+a.pptx-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #D04423;
+	border-color: #D04423;
+	color: #fff!important;
+}
+
+a.python-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #f39c12;
+	border-color: #f39c12;
+	color: #fff!important;
+}
+
+a.audio-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #8e44ad;
+	border-color: #8e44ad;
+	color: #fff!important;
+}
+
+a.image-download {
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #008080;
+	border-color: #008080;
+	color: #fff!important;
+}
+
+/*PayPal button*/
+
+	div.paypal-button-container {
+		text-align: center;
+	}
+	
+	button.paypal-button {
+		padding-left: 3.2em;
+		padding-right: 3.2em;
+		border-radius: 20px;
+		background-color: #ffc439; 
+		border-color: #ffc439;
+		display: inline-block;
+	}
+	
+	button.paypal-button:hover { 
+		background-color: #FCC600;
+		border-color: #FCC600;
+	}
+	
+	.paypal-text {
+		color: #000!important;
+		font-size: 18px;
+		font-weight: bold; 
+		text-transform: none;
+	}
+
+/*WP Social icons*/
+
+p.zoom-social-icons-list--align-center {
+	text-align: left!important;
+}
+
+/*EU cookie notification*/
+
+div.cookie-notice-container {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-family: "Breeze Sans", sans-serif;
+	font-size: 16px;
+}
+
+.cn-set-cookie, .cn-button {
+	font-family: "Breeze Sans", sans-serif;
+	background-color: #fff;
+	color: #000;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 5px;
+}
+
+/*WPRM*/
+.wprm-recipe-template-compact, .wprm-recipe-name, .wprm-recipe-name, .wprm-block-text-bold {
+	font-family: "Breeze Sans", sans-serif!important;
+}
+
+a.wprm-recipe-print-wide-button, a.wprm-recipe-link-wide-button {
+	background-color: rgb(199, 5, 61)!important;
+	border-color: rgb(199, 5, 61)!important;
+	color: #fff!important;
+	border-radius: 5px!important;
+	padding-left: 1em!important;
+	padding-right: 1em!important;
+}
